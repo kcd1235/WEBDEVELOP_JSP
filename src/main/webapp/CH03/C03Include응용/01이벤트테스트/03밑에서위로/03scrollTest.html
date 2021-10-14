@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+           
+        }
+
+        div{
+            border:1px solid gray;
+            width:100px;
+        }
+
+        #d1{
+            height:100px;
+            position:absolute;
+            top:50%;
+            left:0px;
+            animation-name:moving;
+            animation-duration: 0.5s;
+            
+        }
+
+        #d2{
+            height:100px;
+            position:absolute;
+            top:50%;
+            left:120px;
+            animation-name:moving;
+            animation-duration: 0.7s;
+        }
+        #d3{
+            height:100px;
+            position:absolute;
+            top:50%;
+            left:240px;
+            animation-name:moving;
+            animation-duration: 0.9s;
+        }
+
+        #d4{
+            height:100px;
+            position:absolute;
+            top:50%;
+            left:360px;
+            animation-name:moving;
+            animation-duration: 1.1s;
+            
+        }
+        
+        #d5{
+            height:100px;
+            position:absolute;
+            top:50%;
+            left:480px;
+            animation-name:moving;
+            animation-duration: 1.5s;
+            
+        }
+        @keyframes moving
+        {
+            from{top:100%;}
+            to{top:50%;}     
+        }
+    </style>
+</head>
+<body>
+
+    
+    <div id=d1></div>
+    <div id=d2></div>
+    <div id=d3></div>
+    <div id=d4></div>
+    <div id=d5></div>
+</body>
+</html>

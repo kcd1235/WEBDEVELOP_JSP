@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="css/00common.css">
+    <link rel="stylesheet" type="text/css" href="css/01header-meta.css">
+    <!-- 어썸폰트 사용위함 CDN키트(참고 : https://amango.tistory.com/7) -->
+    <script src="https://kit.fontawesome.com/479722258b.js" crossorigin="anonymous"></script>
+    <!-- 02page-header-wrap -->
+    <link rel="stylesheet" type="text/css" href="css/02page-header-wrap.css">
+    <!-- 03page-main -->
+    <link rel="stylesheet" type="text/css" href="css/03page-main.css">
+   
+    <!-- 04 HLS 비디오 재생을 위한 스크립트 -->
+    <script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
+
+    <!-- 06 header-fix  -->
+     <script src=js/06header-fix.js></script>
+   
+     <!-- 07 left-totalmenu -->
+    <link rel="stylesheet" type="text/css" href="css/07totalmenu.css">
+    <script src="js/07totalmenu.js"></script>
+  
+    <!-- 08 scrollEvent -->
+    <link rel="stylesheet" type="text/css" href="css/08scrollEvent.css">
+    <script src="js/09sectionAni.js"></script>
+
+     <!-- 09 footer -->
+     <link rel="stylesheet" type="text/css" href="css/09footer.css">
+
+    <!-- 10 login -->
+    <link rel="stylesheet" type="text/css" href="css/10Login.css">
+    <script src="js/10Login.js"></script>
+</head>
+
+
+<!-- page-meta -->
+
+<div class="header01">
+
+    <div class="block-wrapper">
+       
+        <ul class=header-links>
+            <li><button>대한민국</button></li>
+            <li><a>매장찾기</a></li>
+            <li><button>고객센터</button></li>
+        </ul>
+       
+    </div>
+</div>
+
+           
+
+<!-- page-header-wrap -->
+<div id=page-header-wrap>
+    <div class=block-wrapper>
+
+
+        <div class="header-contents-clearfix">
+            
+
+    <!-- 숨겨진 totalmenu -------------------------------------------------------------->
+        <div id=totalMenu>
+           
+            <!-- 상단 -->
+            <div id=totalMenu-top>
+                <a href="#" onclick="hideMenu()">
+                    <h2>  <i class="fas fa-times fx-3x"></i> &nbsp;메뉴</h2>
+                </a>
+                <ul>
+                    <li>1</li>
+                    <li>2</li>
+                    <li>3</li>
+                    <li>4</li>
+                    <li>5</li>
+                </ul>
+            </div>
+
+            <!-- 하단 -->
+            <div id=totalMenu-bottom>
+
+            </div>
+
+
+        </div>
+
+
+ <!-- 숨겨진 login -------------------------------------------------------------->
+    <div id="login">
+    
+    <div id="Title">
+        <a href="#" id=xbutton onclick="hidelogin()">X</a> LOGIN
+    </div>
+    
+    <form action="test.jsp">
+        <div class="label">* 이메일</div>	
+        <div><input type=text placeholder="Email"></div>
+        <div class="label">* 비밀번호</div>
+        <div><input type=password placeholder="Password"></div>
+        <div class="tmp"><a href="#">비밀먼호를 잊으셨나요?</a></div>
+            
+        
+        <div><input type=submit value=로그인></div>
+        <div><input type=button value=회원가입 onclick=""></div>
+        <hr>
+    </form>
+
+    </div>
+
+
+
+
+
+
+
+
+                <ul>
+                <!-- 왼쪽 메뉴 & 추천 검색 -->
+                <div id=left>
+
+                    <!-- 메뉴 -->
+                    <li id="totalmenu">
+                        <a style="cursor:pointer;" onclick="javascript:showMenu()"> 
+                           
+                            <i class="fas fa-bars  fa-lg"></i>
+                            &nbsp;
+                            메뉴
+                        </a>
+                    </li>                      
+                    
+                    <!-- 검색 -->
+                    <li>
+                        <div class="header-search">
+                            
+
+                            <form action="test.jsp">    
+                                <i class="fas fa-search fa-lg"></i>
+                               
+                                <input type=text placeholder="검색" id="searchtxt">
+                             </form>
+
+                        </div>
+
+                    </li>
+                </div>
+
+                <!-- 가운데 로고 -->
+                <div id=center>
+                    <li id=logo>
+                        <a href="#">
+                        <img alt="Homepage Hermès Paris Korea, Republic of" src="https://www.hermes.com/sites/all/themes/custom/hermes/img/hermes-logo.svg">
+                        </a> 
+                    </li>
+                </div>
+
+
+                <!-- 오른쪽 로그인 & 장바구니  -->
+                <div id="right">
+                    <li>
+                        <a href="#" onclick="showlogin()">
+                        <i class="far fa-user  fa-2x"></i> 
+                        &nbsp; 
+                        <span>로그인</span>
+                        </a>
+                    </li>
+                    <li >
+                        <a href="#">
+                        <i class="fas fa-shopping-bag  fa-2x"></i>
+                        &nbsp; 
+                        <span>장바구니</span>
+                        </a>
+                    </li>
+
+                </div>
+            </ul>
+
+            
+        </div>
+    </div>
+</div>
+ 
+
+
+
+
+<!-- page -->
+<div id="page">
+
+    <!-- main -->
+    <div id="main">
+        <!-- section1 -->
+        <div id="section1">
+            <h2>서로를 이어주는 오브제</h2>
+            <p class="editorial-block-intro">하늘과 바람의 거침없는 힘으로 에르메스 오브제는 자신의 여정을 계속 이어갑니다. 감각을 확장시키고 서로를 이어주는 날아갈 듯한 행복감과 에너지가 한껏 펼쳐집니다.</p>
+            <p class="editorial-block-intro">
+            <a href="/kr/ko/story/287706-objects-connect/">자세히 보기</a>
+            </p>
+        </div>
+
+
+        <!-- section2 -->
+        <div id="section2">
+            
+            <div id="playbutton">
+            ▶
+            </div>
+
+            <video id="video1" poster="img/section02.jfif"></video>        
+            <script>      
+                //비디오 객체 꺼냄
+                var video =  document.getElementById("video1");
+                var videobtn =  document.getElementById("playbutton");
+               
+              
+                //클릭시 이벤트 추가
+                videobtn.addEventListener("click",function(){
+                    video.setAttribute("controls","true");
+                  
+                    videobtn.style.display="none"; //버튼 이미지없앰
+                    video.play(); //비디오 재생
+                })
+                 //Hls
+                 var hls = new Hls();
+                hls.loadSource("https://assets.hermes.com/is/content/hermesedito/V_169_SELLIER_AH21_BIRKIN_10sec-AVS.m3u8");
+                hls.attachMedia(video);
+            </script>      
+        </div>
+
+
+        <!-- section3 -->
+        <div id=section3>
+            
+            <div class="sec3-header" >
+                <h2  class="sec3-ani">에르메스의 컬렉션</h2>
+              </div>    
+
+              <ul>
+                  <li class="sec3-ani">  <!-- 이벤트클래스 추가-->
+                    <div class="sec3-content">
+                            <a href="#">
+                                <img src="img/section3-1.webp">
+                            <span>여성복 </span>
+                        </a>
+                    </div>
+                  </li>
+                  
+                  <li class="sec3-ani">
+                    <div class="sec3-content">
+                        <a href="#">
+                            <img src="img/section3-2.webp">
+                            <span>가방 </span>
+                        </a>
+                    </div>
+                  </li>
+                  <li class="sec3-ani">
+                    <div class="sec3-content">
+                        <a href="#">
+                            <img src="img/section3-3.webp">
+                            <span>워치 </span>
+                        </a>
+                    </div>
+                  </li>
+                  <li class="sec3-ani">
+                    <div class="sec3-content">
+                        <a href="#">
+                            <img src="img/section3-4.webp">
+                            <span>제목1 </span>
+                        </a>
+                    </div>
+                  </li>
+                  <li class="sec3-ani">
+                    <div class="sec3-content">
+                        <a href="#">
+                            <img src="img/section3-5.webp">
+                            <span>제목1 </span>
+                        </a>
+                    </div>
+                  </li>
+                  <li class="sec3-ani">
+                    <div class="sec3-content">
+                        <a href="#">
+                            <img src="img/section3-6.webp">
+                            <span>제목1 </span>
+                        </a>
+                    </div>
+                  </li>
+                  <li class="sec3-ani">
+                    <div class="sec3-content">
+                        <a href="#">
+                            <img src="img/section3-7.webp">
+                            <span>제목1 </span>
+                        </a>
+                    </div>
+                  </li>
+                  <li class="sec3-ani">
+                    <div class="sec3-content">
+                        <a href="#">
+                            <img src="img/section3-8.webp">
+                            <span>제목1 </span>
+                        </a>
+                    </div>
+                  </li>
+              </ul>
+        </div>  <!-- section3 의 끝-->
+
+
+
+
+
+    </div> <!-- main의끝-->
+
+
+
+
+
+ 
+
+
+
+
+</div><!-- page의 끝 -->
+
+
+
+
+
+   <!-- footer -->
+   <footer id="page-footer">
+
+    <div class="block-wrapper">
+
+        <div class="footer-subscribe">
+            <h2 class="footer-title title-small">대화를 계속해 볼까요?</h2> 
+            <p>에르메스의 이야기, 컬렉션, 놀라움이 가득한 뉴스레터를 받아 보세요.</p>
+            <button aria-expanded="false" aria-haspopup="dialog" aria-controls="tray-subscribe" class="button button-block subscribe-button" data-tray-trigger="tray-subscribe" data-track-newsletter-footer="">
+              뉴스레터 구독하기          </button>
+        </div>
+
+
+
+
+        <nav role="navigation" aria-label="hermes.accessibility.useful_links" class="footer-nav">
+            <div class="footer-nav-col" data-track-footer="">
+            <h2 class="title-small">고객 서비스 </h2>
+      
+            <ul>
+                        <li>
+                                <button data-tray-trigger="tray-help" aria-expanded="false" aria-haspopup="dialog" aria-controls="tray-help">
+                      문의하기              </button>
+                            </li>
+                        <li>
+                                              <a href="/kr/ko/faq/">
+                      자주묻는 질문                              </a>
+                            </li>
+                        <li>
+                                              <a href="/kr/ko/find-store/">
+                      매장 찾기                              </a>
+                            </li>
+                        <li>
+                                              <a href="/kr/ko/make-up-stores/">
+                      뷰티 제품을 구매할 수 있는 매장                              </a>
+                            </li>
+                        <li>
+                                              <a href="/kr/ko/faq/online-shopping-kr/#선물하기">
+                      선물하기                              </a>
+                            </li>
+                        <li>
+                                              <a href="/kr/ko/story/270171-made-to-measure/">
+                      Horizon 서비스                              </a>
+                            </li>
+                        <li>
+                                              <a href="/kr/ko/maintenance-repair/">
+                      제품 관리 및 수선                              </a>
+                            </li>
+                    </ul>
+          </div>
+            <div class="footer-nav-col" data-track-footer="">
+            <h2 class="title-small">온라인 스토어</h2>
+      
+            <ul>
+                        <li>
+                                              <a href="/kr/ko/faq/custommer-account-kr/#계정-생성">
+                      회원가입                              </a>
+                            </li>
+                        <li>
+                                              <a href="/kr/ko/faq/online-shopping-kr/#결제">
+                      결제                              </a>
+                            </li>
+                        <li>
+                                              <a href="/kr/ko/faq/online-shopping-kr/#배송">
+                      배송                              </a>
+                            </li>
+                        <li>
+                                              <a href="/kr/ko/faq/online-shopping-kr/#교환과-반품">
+                      교환 환불 정책                              </a>
+                            </li>
+                        <li>
+                                              <a href="/kr/ko/faq/online-shopping-kr/#스토어-픽업">
+                      스토어 픽업 서비스                              </a>
+                            </li>
+                    </ul>
+          </div>
+            <div class="footer-nav-col" data-track-footer="">
+            <h2 class="title-small">에르메스 기업정보</h2>
+      
+            <ul>
+                        <li>
+                                              <a href="/kr/ko/story/266146-sustainable-development/">
+                      지속 가능한 성장                              </a>
+                            </li>
+                        <li>
+                                              <a href="https://www.fondationdentreprisehermes.org/en" target="_blank">
+                      에르메스 재단                <span class="sr-only">새 탭</span>              </a>
+                            </li>
+                        <li>
+                                              <a href="/kr/ko/story/266161-join-hermes/">
+                      채용                              </a>
+                            </li>
+                        <li>
+                                              <a href="http://finance.hermes.com/en/" target="_blank">
+                      재무정보 &amp; 지배구조                <span class="sr-only">새 탭</span>              </a>
+                            </li>
+                        <li>
+                                <button data-tray-trigger="tray-sister-brands" data-track-sister-brands="" aria-expanded="false" aria-haspopup="dialog" aria-controls="tray-sister-brands">
+                      파트너 브랜드              </button>
+                            </li>
+                    </ul>
+          </div>
+            <div class="footer-nav-col" data-track-footer="">
+            <h2 class="title-small">법적 고지</h2>
+      
+            <ul>
+                        <li>
+                                              <a href="/kr/ko/terms-conditions-sale-kr/">
+                      이용약관                              </a>
+                            </li>
+                        <li>
+                                              <a href="/kr/ko/bcr-kr/">
+                      기업 규칙(Binding Corporate Rules)                              </a>
+                            </li>
+                        <li>
+                                              <a href="/kr/ko/privacy-kr/">
+                      개인정보처리방침 및 쿠키                              </a>
+                            </li>
+                        <li>
+                                              <a href="/kr/ko/legal-issues-kr/">
+                      법적 고지                              </a>
+                            </li>
+                        <li>
+                                              <a href="/kr/ko/pipa-kr/">
+                      개인정보처리법                              </a>
+                            </li>
+                    </ul>
+          </div>
+        </nav>
+
+
+
+        
+      <div  class="footer-copyright clearfix">
+        <div class="footer-rights">
+            <p>
+                      <button data-tray="#tray-locale" data-tray-trigger="tray-locale" aria-expanded="false" aria-haspopup="dialog" aria-controls="tray-locale" title="대한민국, 다른 국가 선택하기" class="locale-change js-locale-tray link-to-button-country-language">대한민국</button>            © Hermès 2021. 무단 전재와 무단 복제를 금함.    </p>
+        
+                      <ul class="footer-korean">
+                <li> <!-- (company name | address) -->
+                  에르메스코리아(유) | 주소 및 연락처 : 서울시 강남구 도산대로45길 7 (02)-542-6622
+                </li>
+                <li> <!-- (name of the representative) -->
+                  대표자 : 악셀 듀마, 플로리앙 크랭 ㅣ사업자등록번호 : 120-81-71453
+                </li>
+                <li> <!-- (email | hosting server) -->
+                  메일문의 : <a href="mailto:contact.kr@hermes.com">contact.kr@hermes.com</a> ㅣ호스팅서비스 : 에르메스 인터내셔널
+                </li>
+                <li> <!-- (business registration number) -->
+                  통신판매업 신고번호 : <span class="footer-korean-registration-number">제2020-서울강남-02965호</span><a href="http://www.ftc.go.kr/www/bizCommView.do?key=232&amp;apv_perm_no=2020322023630202965&amp;pageUnit=10&amp;searchCnd=bup_nm&amp;searchKrwd=%EC%97%90%EB%A5%B4%EB%A9%94%EC%8A%A4%EC%BD%94%EB%A6%AC%EC%95%84&amp;pageIndex=1"> (사업자 정보 확인)</a>
+                </li>
+              </ul>
+              
+            </div>
+        </div>
+ </footer>
+ 
+
+<body>
+
+
+
+
+
+</body>
+
+</html>

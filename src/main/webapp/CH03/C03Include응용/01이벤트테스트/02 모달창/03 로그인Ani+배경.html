@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="UTF-8">
+	<title>CSS3 Animation</title>
+	<style>
+
+	
+		#login {
+			width: 26%;
+			height:100%;
+			margin:0px;
+			text-align:center;
+			border: solid 1px orange;
+			/* 수정 */
+			position:fixed;
+			left:73%;
+			top:0%;
+			visibility:hidden;
+		}
+
+		@keyframes movingPara1 {
+			from {left:100%; }
+			to { left:73%; }
+		}
+
+		@keyframes movingPara2 {
+			from {left:73%; }
+			to { left:100%; }
+		}
+
+
+
+		form
+		{
+			width:80%;
+			height:80%;
+			border:1px solid gray;
+			margin:0px auto;
+			padding:20px;
+		}
+		div
+		{
+			width:65%;
+			margin:0px auto;
+		 
+			font-size:12px;
+		}
+		input
+		{
+			margin:5px auto;
+			margin-bottom:20px;
+			width:200px;
+			height:30px;
+			border:1px solid gray;
+			
+		}
+		#Title
+		{
+			margin : 20px auto;
+			font-size:20px;	 
+		}
+		.label
+		{
+			text-align:left;
+		}
+		a
+		{
+			text-decoration:none;
+			font-size:12px;
+			text-align: right;
+
+		}
+		.tmp
+		{
+		
+			text-align:right;
+		}
+	</style>	
+</head>
+
+<body>
+
+	 
+	<header>
+		<div>
+			<button id=loginbutton onclick="showlogin()">로그인</button>
+		</div>
+	</header>
+	
+	<div id=login>
+		<div id="Title"><a href="#" id=xbutton onclick="hidelogin()">X</a> LOGIN</div>
+		<form action="test.jsp">
+			<div class="label">* 이메일</div>	
+			<div><input type=text placeholder="Email"></div>
+			<div class="label">* 비밀번호</div>
+			<div><input type=password placeholder="Password"></div>
+			<div class="tmp"><a href="#">비밀먼호를 잊으셨나요?</a></div>
+				
+			
+			<div><input type=submit value=로그인></div>
+			<div><input type=button value=회원가입 onclick=""></div>
+			<hr>
+		</form>
+	</div>
+
+
+
+	<script>
+		var login = document.getElementById("login");
+		var bg=0;
+		zIndex=9999;
+			function showlogin()
+			{
+
+				// 배경색 희끄무레
+				bg = document.createElement('div');
+				bg.style.position="fixed";
+				bg.style.zIndex="1000";
+				bg.style.left="0px";
+				bg.style.top="0px";
+				bg.style.width="100%";
+				bg.style.height="100%";
+				bg.style.overflow="auto";
+				bg.style.backgroundColor="rgba(0,0,0,0.4)"
+
+				//bg 추가하기
+            	document.body.append(bg);
+
+          
+				//로그인 창 
+				login.style.visibility="visible";
+				login.style.animationName="movingPara1";
+				login.style.animationDuration="0.5s";
+				login.style.left="73%";
+				login.style.backgroundColor="white";
+				login.style.zIndex=zIndex+1;
+				
+			};
+
+
+			function hidelogin()
+			{
+				//백그라운드 제거 
+				bg.remove();
+
+
+				//로그인창 숨기기
+				login.style.animationName="movingPara2";
+				login.style.animationDuration="0.5s";
+				login.style.left="100%";
+			
+			}
+
+
+
+	</script>
+
+</body>
+
+</html>

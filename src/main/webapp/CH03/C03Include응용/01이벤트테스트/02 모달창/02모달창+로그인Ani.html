@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>CSS3 Animation</title>
+    <style>
+        #login {
+            width: 26%;
+            height: 98%;
+            margin: 0px;
+            text-align: center;
+            border: solid 1px orange;
+            /* animation-name: movingPara1; */
+            /* animation-duration: 1s; */
+            /*수정*/
+            position: fixed;
+            left: 73%;
+            top: 10px;
+            /*수정*/
+            visibility: hidden;
+        }
+        
+        @keyframes movingPara1 {
+            from {
+                left: 100%;
+            }
+            to {
+                left: 73%;
+            }
+        }
+        /* 추가 */
+        
+        @keyframes movingPara2 {
+            from {
+                left: 73%;
+            }
+            to {
+                left: 100%;
+            }
+        }
+        
+        form {
+            width: 80%;
+            height: 80%;
+            border: 1px solid gray;
+            margin: 0px auto;
+            padding: 20px;
+        }
+        
+        div {
+            width: 65%;
+            margin: 0px auto;
+            font-size: 12px;
+        }
+        
+        input {
+            margin: 5px auto;
+            margin-bottom: 20px;
+            width: 200px;
+            height: 30px;
+            border: 1px solid gray;
+        }
+        
+        #Title {
+            margin: 20px auto;
+            font-size: 20px;
+        }
+        
+        .label {
+            text-align: left;
+        }
+        
+        a {
+            text-decoration: none;
+            font-size: 12px;
+            text-align: right;
+        }
+        
+        .tmp {
+            text-align: right;
+        }
+    </style>
+
+    <script>
+        var login = 0;
+
+        function showlogin() {
+
+            //1 배경음영 div 추가하기
+            //2 배경음영 div 스타일 지정
+            //3 음영 div body에 연결하기
+            //4 로그인창 활성화
+            login = document.getElementById("login");
+            login.style.visibility = "visible";
+            login.style.animationName = "movingPara1";
+            login.style.animationDuration = "0.5s";
+            login.style.left = "73%";
+        }
+
+        function hidelogin() {
+            //1 배경음영 div 제거하기
+
+            //2 로그인창 숨기기
+            login.style.animationName = "movingPara2";
+            login.style.animationDuration = "0.5s";
+            login.style.left = "100%";
+
+        }
+    </script>
+</head>
+
+<body>
+
+    <div>
+        <button id="loginbutton" onclick="showlogin()">로그인</button>
+    </div>
+
+    <div id=login>
+        <div id="Title"><a href="#" onclick="hidelogin()">X</a>&nbsp;LOGIN</div>
+        <form action="test.jsp">
+            <div class="label">* 이메일</div>
+            <div><input type=text placeholder="Email"></div>
+            <div class="label">* 비밀번호</div>
+            <div><input type=password placeholder="Password"></div>
+            <div class="tmp"><a href="#">비밀먼호를 잊으셨나요?</a></div>
+
+            <div><input type=submit value=로그인></div>
+            <div><input type=button value=회원가입 onclick=""></div>
+            <hr>
+
+        </form>
+    </div>
+
+
+</body>
+
+</html>

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #wrapper {
+            width: 98%;
+            height: 800px;
+            border: 1px solid gray;
+            position: relative;
+            top: 0px;
+            left: 0px;
+        }
+        
+        #modal {
+            width: 400px;
+            height: 300px;
+            padding: 50px 60px;
+            background-color: white;
+            /* border: 1px solid gray; */
+            display: none;
+        }
+        
+        #xbtn {
+            position: absolute;
+            top: 10px;
+            right: 20px;
+            text-decoration: none;
+            font-size: 30px;
+            color: gray;
+        }
+    </style>
+</head>
+
+<body>
+    <button onclick="open_modal()">모달창띄우기</button>
+    <hr>
+    <div id="wrapper">
+        <div id="modal">
+            <a href="#" onclick="close_modal()" id="xbtn">X</a> HTML5는 HTML의 완전한 5번째 버전으로 월드 와이드 웹 (World Wide Web)의 핵심 마크업 언어이다. 2004년 7월 Web Hypertext Application Technology Working Group(WHATWG)에서 웹 애플리케이션 1.0이라는 이름으로 세부 명세 작업을 시작하였다. </div>
+        원래 내용들1~~<br> 원래 내용들2~~<br> 원래 내용들3 ~~<br>
+    </div>
+
+
+
+    <script>
+        var newdiv = 0;
+        var modal = 0;
+
+        function open_modal() {
+            var zIndex = 9999;
+
+            //배경을 어둡게
+            var bg = document.getElementById("wrapper"); // 배경객체 가져옴
+            newdiv = document.createElement('div');
+            newdiv.style.position = "absolute"; //body에 연결시에는  fixed
+            newdiv.style.top = "0px";
+            newdiv.style.left = "0px";
+            newdiv.style.width = "100%";
+            newdiv.style.height = "100%";
+            newdiv.style.oveflow = "auto";
+            newdiv.style.zIndex = zIndex;
+            newdiv.style.backgroundColor = "rgba(0,0,0,0.3)";
+
+            //연결
+            bg.appendChild(newdiv);
+            //document.body.appendChild(newdiv);
+
+
+            //창 띄우기
+            modal = document.getElementById("modal");
+            modal.style.position = "absolute"; //body 에 연결할 예정이라면 fixed
+            modal.style.top = "30%";
+            modal.style.left = "35%";
+            modal.style.display = "block";
+            modal.style.zIndex = zIndex + 1;
+        }
+
+        function close_modal() {
+            //모달창 숨김
+            modal.style.display = "none";
+            //추가했던 음영 제거
+            newdiv.remove();
+
+        }
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,74 @@
+#totalMenu
+{
+width: 33%; /*510px로 나중에 바꿀것*/
+height:100%;
+margin:0px;
+text-align:center;
+/* border: solid 1px orange; */
+background-color:white;
+/* 수정 */
+position:fixed;
+left:0%;
+top:0%;
+visibility:hidden;
+/* visibility:visible; */
+}
+
+
+@keyframes movingPara1 {
+    from {left:-100%; }
+    to { left:0%; }
+}
+
+@keyframes movingPara2 {
+    from {left:0%; }
+    to { left:-100%; }
+}
+
+
+#totalMenu-top
+{
+    color: rgb(68, 68, 68);
+    line-height: 157.143%;
+    font-weight: 400;
+    cursor: default;
+    margin:0px;
+    padding: 4.61538rem 7.69231rem 3.84615rem 7.69231rem;
+    width:33%;
+    text-align:left;
+}
+
+#totalMenu-top a
+{
+    text-decoration:none;
+    color: rgb(68, 68, 68);
+    
+    cursor: pointer;
+    font-size: 0.92308rem;
+    display: inline-block;
+    text-align: start;
+    text-indent: 0px;
+    font-weight: 400;
+    margin: 0;
+   
+    width:100%;
+     
+    padding: 0;
+}
+
+
+#totalMenu-top h2
+{
+  
+    color: rgb(68, 68, 68);
+    cursor: default;
+    font-size: 2.46154rem;
+    margin: .15385rem .15385rem .15385rem 1.15385rem;
+    line-height: 2.61538rem;
+    font-weight: 400;
+
+}
+#totalMenu-bottom
+{
+
+}

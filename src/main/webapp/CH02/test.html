@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<script>
+		function JSfunc()
+		{
+			FORM=document.FORM1;
+            name=FORM[0].value;
+            age=FORM[1].value;
+            newvalue="JS에서 추가한 값";
+            FORM.action="C06JStoJSP?name="+name+"&age="+age+"&newvalue="+newvalue;
+			FORM.submit();
+		}
+	</script>
+	<form method="get" action="C06JStoJSP.jsp" name="FORM1">
+		이름 : <input type=text name="name"><br>
+		나이 : <input type="text" name="age"><br>
+        <input type="hidden" name="hidden">
+		<input type="button" value="전송" onclick="JSfunc()">
+	</form>
+</body>
+</html>
