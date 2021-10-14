@@ -6,13 +6,10 @@
 <meta charset="UTF-8">
 <title>Insert title here</title>
 </head>
-<%@page import="java.util.*" %>
 <body>
-	<%
-		//Scanner사용
-		//java.util.Scanner sc=new java.util.Scanner("System.in");
-		Scanner sc=new Scanner("System.in");
-		Date date=new Date();
-	%>
+	<form action="C03Result.jsp">
+		<input type="text" name=num> / <input type="text" name=divnum>
+		<input type="submit" value="계산">
+	</form>
 </body>
 </html>

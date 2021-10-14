@@ -6,13 +6,11 @@
 <meta charset="UTF-8">
 <title>Insert title here</title>
 </head>
-<%@page import="java.util.*" %>
 <body>
-	<%
-		//Scanner사용
-		//java.util.Scanner sc=new java.util.Scanner("System.in");
-		Scanner sc=new Scanner("System.in");
-		Date date=new Date();
-	%>
+	<!--지시자태그-->
+	<%@include file="tmp/A.jsp"%>
+	
+	<!--액션태그-->
+	<jsp:include page="tmp/B.jsp"/>
 </body>
 </html>

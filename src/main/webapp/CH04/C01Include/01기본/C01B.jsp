@@ -6,13 +6,11 @@
 <meta charset="UTF-8">
 <title>Insert title here</title>
 </head>
-<%@page import="java.util.*" %>
 <body>
+	B페이지로부터 가져온 내용입니다!
 	<%
-		//Scanner사용
-		//java.util.Scanner sc=new java.util.Scanner("System.in");
-		Scanner sc=new Scanner("System.in");
-		Date date=new Date();
+		String tmp=request.getParameter("bparam");
+		out.print(tmp+"<br>");
 	%>
 </body>
 </html>

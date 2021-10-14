@@ -6,13 +6,13 @@
 <meta charset="UTF-8">
 <title>Insert title here</title>
 </head>
-<%@page import="java.util.*" %>
 <body>
+	<hr>
+	<h2>Include 액션태그</h2>
 	<%
-		//Scanner사용
-		//java.util.Scanner sc=new java.util.Scanner("System.in");
-		Scanner sc=new Scanner("System.in");
-		Date date=new Date();
+		String imgname=request.getParameter("imgname");
 	%>
+	<img alt="" src="<%=imgname%>">
+	<hr>
 </body>
 </html>

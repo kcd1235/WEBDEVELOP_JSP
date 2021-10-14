@@ -6,13 +6,10 @@
 <meta charset="UTF-8">
 <title>Insert title here</title>
 </head>
-<%@page import="java.util.*" %>
 <body>
-	<%
-		//Scanner사용
-		//java.util.Scanner sc=new java.util.Scanner("System.in");
-		Scanner sc=new Scanner("System.in");
-		Date date=new Date();
-	%>
+	<hr>
+	<h2>Include 지시자사용</h2>
+	<img src="img/section3-1.webp">
+	<hr>
 </body>
 </html>

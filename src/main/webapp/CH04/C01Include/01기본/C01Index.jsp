@@ -6,13 +6,10 @@
 <meta charset="UTF-8">
 <title>Insert title here</title>
 </head>
-<%@page import="java.util.*" %>
 <body>
-	<%
-		//Scanner사용
-		//java.util.Scanner sc=new java.util.Scanner("System.in");
-		Scanner sc=new Scanner("System.in");
-		Date date=new Date();
-	%>
+	<form action="C01IncludeTag.jsp" method="post">
+		<input name="userid">
+		<input type="submit" value="전송">
+	</form>
 </body>
 </html>
