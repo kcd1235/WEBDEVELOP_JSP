@@ -12,7 +12,7 @@
 	<%
 		String imgname=request.getParameter("imgname");
 	%>
-	<img alt="" src="<%=imgname%>">
+	<img src="<%=imgname%>">
 	<hr>
 </body>
 </html>
