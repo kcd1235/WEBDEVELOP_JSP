@@ -1,0 +1,222 @@
+#section1
+{
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-top: 60px;
+    margin-right: 150px;
+    margin-left: 150px;
+    padding-right: 200px;
+    padding-left: 200px;
+    text-align: center;
+    padding-bottom: 40px;
+    
+    /* width:100%  설정시 문제생긴다..왜? */
+   /*  width: 설정안하면 마진/패딩 이외 나머지 너비/높이가 지정  */
+
+    
+}
+#section1 h2
+{
+    font-size: 2.46154rem;
+    line-height: 3.07692rem;
+    text-align: center;
+    margin: 0px 0px 20px -2px;
+    margin-left: 0;
+    font-weight: 400;
+   
+}
+
+#section1 p
+{
+    
+    font-weight: 400;
+    font-size: 1.23077rem;
+    line-height: 1.84615rem;
+    font-family: "Courier New", "Microsoft YaHei", 微软雅黑, "PingFang SC", 萍方, "Noto Sans", SimHei, 黑体, monospace;
+    text-align: center;
+  
+}
+
+#section1 a
+{
+    font-weight: 400;
+    font-size: 1.23077rem;
+    line-height: 1.84615rem;
+    font-family: Courier New,Microsoft YaHei,å¾®è½¯é›…é»‘,PingFang SC,èæ–¹,Noto Sans,SimHei,é»‘ä½“,monospace;
+    text-align: center;
+    color: #444;
+    
+
+}
+
+
+
+/* 04page-main-section2.html */
+
+#section2
+{
+
+    margin-bottom: 0;
+    padding-bottom: 60px;
+    margin-right: 0;
+    margin-left: 0;
+    padding-right: 150px;
+    padding-left: 150px;
+    margin-top: 0;
+    padding-top: 0;
+    
+    text-align: center;
+    position: relative;
+}
+
+video
+{
+    width: 100%;
+    height: 100%;  
+    
+}
+
+#playbutton
+{
+    position:absolute; 
+    font-size:100px;
+    z-index: 2;
+    top:0%;
+    left:50%;   
+    line-height: 657.14286%;
+    display:block;
+    color:white;
+    cursor: pointer;
+}
+
+/* 
+HTTP 라이브 스트리밍(HTTP Live Streaming, HLS)은 애플이 개발하여 2009년 출시한 HTTP 기반 적응 비트레이트 스트리밍 통신 프로토콜이다.
+ 이 프로토콜은 여러 미디어 플레이어, 웹 브라우저, 모바일 기기, 스트리밍 미디어 서버에서 지원되고 있다. 연간 비디오 산업 조사에 따르면 
+ 가장 대중적인 스트리밍 포맷으로 간주된다.[2]
+
+HLS는 전반적인 스트림을 크기가 작은 일련의 HTTP 기반 파일 다운로드로 분리시켜 개개의 다운로드를 통해 잠재적으로 무한한 전송 스트림의 
+작은 덩어리를 적재시킴으로써 동작한다는 면에서 MPEG-DASH와 유사하다. 각기 다른 비트레이트로 인코딩되는, 이용 가능한 스트림 목록은 확장
+ M3U 플레이리스트를 사용하여 클라이언트에 전송된다.[3]
+
+표준 HTTP 트랜잭션에 기반한 HTTP 라이브 스트리밍은 RTP 등 UDP 기반 프로토콜과 달리 표준 HTTP 트래픽을 통해 방화벽이나 프록시 서버를 
+경유할 수 있다. 또, 널리 이용되는 HTTP 기반 콘텐츠 전송 네트워크를 통해 콘텐츠를 전통적인 HTTP 서버로부터 제공받을 수 있다.[4] 이 표준은 
+또한 표준 암호화 매커니즘[5]과 HTTPS를 이용한 보안 키 배포를 사용하며 이 둘은 단순한 DRM 시스템을 제공하게 된다. 이 프로토콜의 후반 버전은
+ 트릭 모드 빨리감기와 되감기, 자막 연동을 제공한다.
+
+애플은 HTTP 라이브 스트리밍을 인터넷 초안(개별 제출)으로 문서화하였으며 이는 RFC로서의 출판 과정의 첫 단계이다. 2015년 12월 기준으로 해당 
+문서의 저자들은 IETF 총의 과정이 아닌 외부에서 문서를 정보성(비표준) RFC로 출판하기 위해 RFC ISE(Independent Stream Editor)를 요청하였다.
+[6] 2017년 8월, RFC8216는 프로토콜 버전 7을 기술하기 위해 출판되었다.[7]
+ */
+
+
+
+
+ /* 05page-main-section3.html */
+
+ #section3
+ {
+    display: block;
+    margin-top: 0;
+    margin-bottom: 0;
+
+    margin-right: 0;
+    margin-left: 0;
+
+  
+    padding-bottom: 60px;
+    padding-right: 100px;
+    padding-left: 100px;
+    padding-top: 60px;
+ }
+ 
+ .sec3-header
+ {
+   margin: 0 120px;
+   padding-bottom: 40px;
+ }
+
+
+ .sec3-header h2
+ {
+ 
+ 
+   font-size: 2.46154rem;
+   line-height: 3.07692rem;
+   text-align: center;
+   margin: 0px 0px 20px -2px;
+   margin-left: 0;
+   letter-spacing: 0;
+   font-weight: 400;
+   margin-bottom:  0;
+
+
+   
+ }
+ 
+
+
+ #section3 ul
+ {
+   padding: 0;
+   list-style: none;
+   font-size: 0;
+   display: flex;
+   flex-wrap: wrap;
+   margin: -10px -20px;
+ }
+
+
+  
+ #section3 li
+ {
+  font-size: 0;
+  box-sizing: border-box;
+  padding: 10px 20px;
+  flex-basis:  25%;   /*아이템의 기본 점유 크기를 설정 */
+  max-width: 25%;
+  /* border:1px solid gray; */
+  
+
+ }
+ 
+
+ .sec3-content
+ {
+   
+ }
+
+ .sec3-content a
+ {
+
+    display:block;  
+     
+ }
+ 
+ .sec3-content img
+ {
+  width:100%;
+  /* border:1px solid gray; */
+  padding:0px;
+
+ }
+
+ .sec3-content span
+ {
+  display:block;
+  text-align:left;
+  font-size: 1.38462rem;
+  line-height: 1.69231rem;
+  color: #444;
+  font-weight: 400;
+  max-height: 3.38462rem;
+  margin: 10px 0 10px -2px;
+  /* border:1px solid gray; */
+  position:relative;
+  top:-10px;
+ }
+
+ .sec3-content a
+ {
+  text-decoration:none;
+  color: rgb(68, 68, 68);
+ } 

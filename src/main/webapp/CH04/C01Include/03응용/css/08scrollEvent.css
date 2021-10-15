@@ -1,0 +1,11 @@
+.sec3-ani{      
+    position:relative;
+    top:0px;
+    left:0px;
+}
+
+@keyframes moving
+{
+    from{top:400px;}
+    to{top:0px;}     
+}

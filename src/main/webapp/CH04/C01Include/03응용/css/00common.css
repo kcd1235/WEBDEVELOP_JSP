@@ -1,0 +1,16 @@
+html  /*수정할 것 */
+{
+    font-size: 81.25%;
+    box-sizing: border-box;
+    color: #444;
+    line-height: 157.14286%;
+    overflow-x: hidden;
+    width: 100%;
+    background: #f6f1eb;
+    font-weight: 400;
+    font-family: Arial unicode MS, sans-serif;
+}
+
+body{
+    margin:0px;
+}
