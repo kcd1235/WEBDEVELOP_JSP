@@ -7,10 +7,13 @@
 <title>Insert title here</title>
 </head>
 <body>
-	<h1>메인페이지</h1>
-	<h1><%=session.getAttribute("ID") %>님 환영합니다</h1>
-	
-	CONTENTS<br>
-	<a href="C02TotalSession.jsp">세션값확인</a>
+	<%
+		String userid=(String)session.getAttribute("ID");
+		session.invalidate();	//세션제거
+	%>
+	<script>
+		alert("<%=userid%>님 로그아웃되셨습니다!");
+		location.href="C04Login.html";
+	</script>
 </body>
 </html>
