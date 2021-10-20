@@ -17,7 +17,7 @@
 	%>
 	<script>
 		alert("<%=userid%>님 로그아웃되셨습니다!");
-		location.href="C05Login.html";
+		location.href="C05Login.jsp";
 	</script>
 </body>
 </html>

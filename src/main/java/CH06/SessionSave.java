@@ -2,7 +2,7 @@ package CH06;
 
 import java.util.*;
 
-public class SessinSave {
+public class SessionSave {
 	//멤버변수
 	public Map<String,Account> map=new HashMap();
 	

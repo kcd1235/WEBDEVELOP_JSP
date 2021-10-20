@@ -1,0 +1,71 @@
+
+		#login {
+			width: 26%;
+			height:100%;
+			margin:0px;
+			text-align:center;
+			/* 수정 */
+			position:fixed;
+			left:73%;
+			top:0%;
+			visibility:hidden;
+           
+		}
+
+		@keyframes loginPara1 {
+			from {left:100%; }
+			to { left:73%; }
+		}
+
+		@keyframes loginPara2 {
+			from {left:73%; }
+			to { left:100%; }
+		}
+
+
+
+		#login form
+		{
+			width:80%;
+			height:80%;
+			border:1px solid gray;
+			margin:0px auto;
+			padding:20px;
+		}
+        #login div
+		{
+			width:65%;
+			margin:0px auto;
+		 
+			font-size:12px;
+		}
+		#login input
+		{
+			margin:5px auto;
+			margin-bottom:20px;
+			width:200px;
+			height:30px;
+			border:1px solid gray;
+			
+		}
+		#login  #Title
+		{
+			margin : 20px auto;
+			font-size:20px;	 
+		}
+		#login  .label
+		{
+			text-align:left;
+		}
+		#login  a
+		{
+			text-decoration:none;
+			font-size:12px;
+			text-align: right;
+
+		}
+		#login .tmp
+		{
+		
+			text-align:right;
+		}
