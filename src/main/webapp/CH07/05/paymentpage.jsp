@@ -14,10 +14,9 @@
 <%@include file="jsp/users/header-wrapper.jsp" %>
 
 <!-- page-section -->
-<jsp:include page="jsp/users/page.jsp" />
+<jsp:include page="jsp/users/cartpage.jsp" />
 
 <!-- Footer -->
 <%@include file="jsp/common/footer.jsp" %>
-
 </body>
 </html>

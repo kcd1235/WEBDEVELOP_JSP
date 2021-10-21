@@ -7,16 +7,20 @@
 <title>Insert title here</title>
 </head>
 <body>
-	<!--page meta-->
-	<%@include file="jsp/common/header-meta.jsp" %>
-	
-	<!--header wrapper -->
-	<%@include file="jsp/anonymous/header-wrapper.jsp" %>
-	
-	<!--page section  -->
-	<%@include file="jsp/anonymous/page.jsp" %>
-	
-	<!--footer  -->
-	<%@include file="jsp/common/footer.jsp" %>
+<!-- page meta -->
+<%@include file="jsp/common/header-meta.jsp" %>
+
+<!-- header-wrapper -->
+<%@include file="jsp/anonymous/header-wrapper.jsp" %>
+
+<!-- page-section -->
+<%@include file="jsp/anonymous/page.jsp" %>
+
+<!-- Footer -->
+<%@include file="jsp/common/footer.jsp" %>
+
+
+
+
 </body>
 </html>

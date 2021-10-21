@@ -5,20 +5,11 @@
 <head>
 <meta charset="UTF-8">
 <title>Insert title here</title>
-<style>
-	#page
-	{
-		height:800px;
-		background-color:white;
-		border:1px solid gray;
-		margin:50px;
-	}
-</style>
 </head>
 <body>
-	<!-- page -->
-	<div id="page">
-		
-	</div>
+	<%
+		session.invalidate();
+		response.sendRedirect("../../index.jsp");
+	%>
 </body>
 </html>
